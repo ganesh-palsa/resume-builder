@@ -1,0 +1,62 @@
+.dashboard-page {
+  padding: 1rem 0;
+}
+
+.resumes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.resume-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-title {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.score-badge {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.resume-card-actions {
+  border-top: 1px solid var(--border);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.py-6 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.border-danger {
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.border-danger:hover {
+  background-color: var(--danger);
+  color: white;
+  border-color: var(--danger);
+}

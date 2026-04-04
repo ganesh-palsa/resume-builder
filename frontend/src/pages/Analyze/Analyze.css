@@ -1,0 +1,78 @@
+.analyze-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+}
+
+.analyze-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border: 10px solid #E5E7EB;
+  position: relative;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-total {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Status colors and borders */
+.status-excellent { border-color: #10B981; color: #10B981; }
+.status-good { border-color: #3B82F6; color: #3B82F6; }
+.status-average { border-color: #F59E0B; color: #F59E0B; }
+.status-needs-improvement { border-color: #EF4444; color: #EF4444; }
+
+.status-text-excellent { color: #10B981; }
+.status-text-good { color: #3B82F6; }
+.status-text-average { color: #F59E0B; }
+.status-text-needs-improvement { color: #EF4444; }
+
+.suggestions-box {
+  background-color: #F9FAFB;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions-list li span {
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
