@@ -16,12 +16,12 @@ router.route('/')
   .get(protect, getResumes)
   .post(protect, createResume);
 
-router.post('/analyze', protect, analyzeResume);
-router.post('/download', protect, downloadResume);
-
 router.route('/:id')
   .get(protect, getResume)
   .put(protect, updateResume)
   .delete(protect, deleteResume);
+
+router.post('/:id/analyze', protect, analyzeResume);
+router.post('/:id/download', protect, downloadResume);
 
 module.exports = router;
