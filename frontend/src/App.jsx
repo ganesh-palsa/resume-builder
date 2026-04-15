@@ -6,7 +6,7 @@ import Register from './pages/Register/Register';
 import UserTypeSelect from './pages/UserTypeSelect/UserTypeSelect';
 import Builder from './pages/Builder/Builder';
 import Templates from './pages/Templates/Templates';
-import Preview from './pages/home/Preview/Preview';
+import Preview from './pages/Home/Preview/Preview';
 import Analyze from './pages/Analyze/Analyze';
 import Dashboard from './pages/Dashboard/Dashboard';
 
