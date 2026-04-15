@@ -3,7 +3,7 @@ import axios from 'axios';
 // Create an axios instance with a default base URL
 // We use a placeholder local URL as requested
 const api = axios.create({
-  baseURL: 'https://resume-builder-c8eg.onrender.com',
+  baseURL: 'https://resume-builder-c8eg.onrender.com/api',
   headers: {
     'Content-Type': 'application/json'
   }
