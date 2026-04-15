@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useResume } from '../../context/ResumeContext';
+import { useResume } from '../../../context/ResumeContext';
 import { Link, useNavigate } from 'react-router-dom';
 import { Download, Edit, BarChart, ArrowLeft } from 'lucide-react';
 import './Preview.css';
